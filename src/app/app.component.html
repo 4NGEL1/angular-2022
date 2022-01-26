@@ -6,10 +6,20 @@
     <mat-icon class="Tool-icon">graphic_eq</mat-icon>
     <a href="https://open.spotify.com/"></a>
   </button>
-  <button mat-icon-button class="Tool-icon">
-    <a href="https://github.com/4NGEL1/angular-2022"></a>
-   <mat-icon class="Tool-icon">github</mat-icon>
- </button>
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="'/Canciones'"
+  >
+    /Canciones
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="'/CancionDetail'"
+  >
+    /CancionDetail
+  </button>
 </mat-toolbar>
 <mat-progress-bar
   mode='indeterminate'
