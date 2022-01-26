@@ -3,6 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  apiurl: 'https://reqres.in/api',
+  api2Url: 'https://super-rest.herokuapp.com/api',
+  gitH: "https://github.com/4NGEL1/angular-2022.git",
+  Enla: "https://open.spotify.com/search/",
+  spoti: "https://open.spotify.com/",
   production: false
 };
 

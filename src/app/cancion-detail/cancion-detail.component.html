@@ -1,0 +1,45 @@
+
+<div>
+  <mat-card>
+    <mat-card-title class="Center">Datos a Ingresar</mat-card-title>
+  </mat-card>
+</div>
+
+<div [formGroup]="formSong" class="form-song">
+  <mat-form-field class="song-input" appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="Nombre" />
+  </mat-form-field>
+
+  <mat-form-field class="song-input" appearance="fill">
+    <mat-label>Autor</mat-label>
+    <input matInput formControlName="Autor" />
+  </mat-form-field>
+
+  <mat-form-field class="song-input" appearance="fill">
+    <mat-label>Artista</mat-label>
+    <input matInput formControlName="Artista" />
+  </mat-form-field>
+
+  <mat-form-field class="song-input" appearance="fill">
+    <mat-label>Año</mat-label>
+    <input matInput formControlName="Year" />
+  </mat-form-field>
+
+  <mat-form-field class="song-input" appearance="fill">
+    <mat-label>Duracion</mat-label>
+    <input matInput formControlName="Duracion" />
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="formSong.invalid"
+    (click)="save()"
+    [routerLink]="'/Canciones'"
+  >
+    Guardar
+  </button>
+</div>
+
+
